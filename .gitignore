@@ -1,0 +1,13 @@
+# Python / local env
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+# Generated output (backtests + live signals) — regenerate via backtest_all.py / live_screen.py
+output/
+
+# Telegram bot-managed allowlist (admin-editable at runtime via /admin_add)
+_telegram_work/
