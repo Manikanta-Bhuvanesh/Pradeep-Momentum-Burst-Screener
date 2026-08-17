@@ -25,6 +25,7 @@ LEG_UP_DAY_FRACTION_MIN: float = 0.5  # "persistent, linear buying" proxy: major
 
 # Q2 — quality of the consolidation/pullback.
 PULLBACK_MAX_DAYS: int = 7  # "ideal 3-7 days" (2 OK in a strong market, beyond ~10 needs high volume)
+PULLBACK_MIN_DAYS: int = 2  # "1 day doesn't count as a real pause" — require a genuine multi-day quiet spell
 PULLBACK_GIVEBACK_FRACTION: float = 1.0 / 3.0  # must NOT give back more than 1/3 of the first leg's gain
 SINGLE_DAY_DRAWDOWN_MAX_PCT: float = 4.0  # "at most one single day with a <=4% breakdown is tolerable"
 
